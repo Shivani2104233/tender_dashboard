@@ -1,0 +1,18 @@
+[
+  {
+    "tenderNo": "NFL/PT/Electrical/446/2025-26",
+    "organization": "NFL Panipat",
+    "place": "Panipat",
+    "estimatedValue": 2157331,
+    "bidDeadline": "2025-07-15",
+    "status": "Pending"
+  },
+  {
+    "tenderNo": "AAI/CH/2025/001",
+    "organization": "AAI Chennai",
+    "place": "Chennai",
+    "estimatedValue": 5000000,
+    "bidDeadline": "2025-08-01",
+    "status": "Submitted"
+  }
+]
