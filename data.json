@@ -1,18 +1,7 @@
-[
-  {
-    "tenderNo": "NFL/PT/Electrical/446/2025-26",
-    "organization": "NFL Panipat",
-    "place": "Panipat",
-    "estimatedValue": 2157331,
-    "bidDeadline": "2025-07-15",
-    "status": "Pending"
-  },
-  {
-    "tenderNo": "AAI/CH/2025/001",
-    "organization": "AAI Chennai",
-    "place": "Chennai",
-    "estimatedValue": 5000000,
-    "bidDeadline": "2025-08-01",
-    "status": "Submitted"
-  }
-]
+// Tender data - add new tenders here
+const tenders = [
+    { name: "Chennai AAI Tender", status: "Submitted", value: "21,57,331", deadline: "2025-01-05" },
+    { name: "Railway Rajkot Tender", status: "Pending", value: "16,20,000", deadline: "2025-02-10" },
+    { name: "IOCL Panipat Tender", status: "Missing Docs", value: "12,00,000", deadline: "2025-01-20" },
+    { name: "NMDC Bacheli Tender", status: "Submitted", value: "18,50,000", deadline: "2025-02-15" }
+];
