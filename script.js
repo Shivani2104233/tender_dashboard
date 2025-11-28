@@ -1,10 +1,3 @@
-// You can edit this data anytime
-const tenders = [
-    { name: "Chennai AAI Tender", status: "Submitted", value: "21,57,331", deadline: "2025-01-05" },
-    { name: "Railway Rajkot Tender", status: "Pending", value: "16,20,000", deadline: "2025-02-10" },
-    { name: "IOCL Panipat Tender", status: "Missing Docs", value: "12,00,000", deadline: "2025-01-20" }
-];
-
 // Mapping status → color
 function getStatusClass(status) {
     if (status === "Submitted") return "green";
