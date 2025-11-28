@@ -1,92 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tender Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Chart.js CDN (browser will fetch when opened) -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tender Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
     <h1>Tender Dashboard</h1>
-    <div class="top-actions">
-      <input id="searchInput" placeholder="Search by Tender No., Org or Place..." />
-      <select id="statusFilter">
-        <option value="All">All statuses</option>
-        <option value="Pending">Pending</option>
-        <option value="Submitted">Submitted</option>
-        <option value="Awarded">Awarded</option>
-        <option value="Rejected">Rejected</option>
-      </select>
-      <button id="downloadCsv">Download CSV</button>
-      <button id="resetSample">Reset Sample Data</button>
-    </div>
-  </header>
 
-  <main>
-    <section class="panel">
-      <h2>Tenders</h2>
-      <div id="tableWrap">
-        <table id="tenderTable">
-          <thead>
+    <table id="tenderTable">
+        <thead>
             <tr>
-              <th>Tender No.</th>
-              <th>Organization</th>
-              <th>Place</th>
-              <th>Estimated Value</th>
-              <th>Bid Deadline</th>
-              <th>Status</th>
-              <th>Actions</th>
+                <th>Tender Name</th>
+                <th>Status</th>
+                <th>Value</th>
+                <th>Deadline</th>
             </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <button id="openForm">+ Add / Edit Tender</button>
-    </section>
+        </thead>
+        <tbody id="tenderBody">
+        </tbody>
+    </table>
 
-    <section class="panel charts">
-      <h2>Summary</h2>
-      <div class="chart-row">
-        <div class="chart-card">
-          <canvas id="statusPie"></canvas>
-        </div>
-        <div class="chart-card">
-          <canvas id="valueBar"></canvas>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel form-panel" id="formPanel" aria-hidden="true">
-      <h2 id="formTitle">Add Tender</h2>
-      <form id="tenderForm">
-        <label>Tender No.<input name="tenderNo" required/></label>
-        <label>Organization<input name="organization" required/></label>
-        <label>Place<input name="place"/></label>
-        <label>Estimated Value<input name="estimatedValue" type="number" min="0" /></label>
-        <label>Bid Deadline<input name="bidDeadline" type="date" /></label>
-        <label>Status
-          <select name="status">
-            <option>Pending</option>
-            <option>Submitted</option>
-            <option>Awarded</option>
-            <option>Rejected</option>
-          </select>
-        </label>
-        <div class="form-actions">
-          <button type="submit">Save</button>
-          <button type="button" id="cancelForm">Cancel</button>
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <small>Open <code>index.html</code> in your browser. Data is saved locally in your browser (localStorage).</small>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
