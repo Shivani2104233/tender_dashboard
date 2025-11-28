@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tender Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tender Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tender Dashboard</h1>
+  <h1>Tender Dashboard</h1>
 
-    <table id="tenderTable">
-        <thead>
-            <tr>
-                <th>Tender Name</th>
-                <th>Status</th>
-                <th>Value</th>
-                <th>Deadline</th>
-            </tr>
-        </thead>
-        <tbody id="tenderBody">
-        </tbody>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Tender Name</th>
+        <th>Status</th>
+        <th>Estimated Value (₹)</th>
+        <th>Deadline</th>
+      </tr>
+    </thead>
+    <tbody id="tenderBody">
+      <!-- Data will load here -->
+    </tbody>
+  </table>
 
-    <script src="script.js"></script>
+  <!-- Load data first -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
