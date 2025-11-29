@@ -1,7 +1,11 @@
-// Tender data - add new tenders here
+// data.js
+// Initial demo data (will be used only if localStorage is empty)
 const tenders = [
-    { name: "Chennai AAI Tender", status: "Submitted", value: "21,57,331", deadline: "2025-01-05" },
-    { name: "Railway Rajkot Tender", status: "Pending", value: "16,20,000", deadline: "2025-02-10" },
-    { name: "IOCL Panipat Tender", status: "Missing Docs", value: "12,00,000", deadline: "2025-01-20" },
-    { name: "NMDC Bacheli Tender", status: "Submitted", value: "18,50,000", deadline: "2025-02-15" }
+  { id: 'T001', name: "ABSDHGKM Powergrid Tender", status: "Submitted", value: 2157331, deadline: "2025-01-05", org: "PowerGrid", qty: 10, dept1:"Electrical", dept2:"Procurement", note: "Initial bid submitted" },
+  { id: 'T002', name: "RAJKOT WEST RAIL Tender", status: "Pending", value: 1620000, deadline: "2025-02-10", org: "Railways", qty: 5, dept1:"Civil", dept2:"Stores", note: "Need technical docs" },
+  { id: 'T003', name: "IOCL PANIPAT Tender", status: "Missing Docs", value: 1200000, deadline: "2025-01-20", org: "IOCL", qty: 2, dept1:"Electrical", dept2:"Quality", note: "Missing annexure" },
+  { id: 'T004', name: "NMDC BACHELI GEM2025", status: "Submitted", value: 1850000, deadline: "2025-02-15", org: "NMDC", qty: 20, dept1:"Supply", dept2:"Finance", note: "E-bid complete" },
+  { id: 'T005', name: "CHENNAI AAI ABSDHGKM", status: "Awarded", value: 5000000, deadline: "2025-03-01", org: "AAI", qty: 1, dept1:"Airport", dept2:"Contracts", note: "Awarded to us" },
+  { id: 'T006', name: "SOLAR FARM ABSDHGKM", status: "Draft", value: 750000, deadline: "2025-04-12", org: "GreenPower", qty: 100, dept1:"Design", dept2:"Procurement", note: "Draft stage" },
+  { id: 'T007', name: "CITY LIGHTING ABSDHGKM", status: "Pending", value: 420000, deadline: "2025-05-06", org: "Municipal", qty: 50, dept1:"Electrical", dept2:"Maintenance", note: "Waiting for clarifications" }
 ];
