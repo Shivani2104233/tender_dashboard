@@ -28,3 +28,16 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+<h1>Tender Dashboard</h1>
+
+<div style="text-align:center;">
+    <input id="searchInput" type="text" placeholder="Search tenders..." onkeyup="searchTenders()">
+
+    <button onclick="filterStatus('All')">All</button>
+    <button onclick="filterStatus('Submitted')">Submitted</button>
+    <button onclick="filterStatus('Pending')">Pending</button>
+    <button onclick="filterStatus('Missing Docs')">Missing Docs</button>
+</div>
+
